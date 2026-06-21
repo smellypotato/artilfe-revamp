@@ -12,7 +12,7 @@ Copy the template and fill in your values locally:
 cp .env.example .env.local
 ```
 
-Required for the app (`npm run dev`, production builds):
+Required for the app (`yarn dev`, production builds):
 
 | Variable | Where to get it |
 |----------|-----------------|
@@ -32,19 +32,19 @@ Migration scripts use separate variables — see `.env.example`. Never commit `.
 Install dependencies:
 
 ```bash
-npm install
+yarn install
 ```
 
 Run the local dev server:
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Build for production:
 
 ```bash
-npm run build
+yarn build
 ```
 
 Vite outputs production files to `dist`.
@@ -142,8 +142,8 @@ Build locally for Pages:
 
 ```bash
 # requires .env.local with VITE_* values
-npm run build:pages
-npm run preview -- --base /artilfe-revamp/
+yarn run build:pages
+yarn preview --base /artilfe-revamp/
 ```
 
 ### One-time Supabase setup
