@@ -1,0 +1,32 @@
+.StorageWarning {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  width: min(320px, calc(100vw - 2rem));
+  border: 1px solid #d9a066;
+  border-radius: 18px;
+  padding: 0.9rem 1rem;
+  color: #5a3b1f;
+  background: #fff3df;
+  box-shadow: 0 16px 40px rgba(120, 74, 20, 0.18);
+}
+
+.StorageWarning strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.StorageWarning p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 680px) {
+  .StorageWarning {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+}

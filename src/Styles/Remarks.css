@@ -1,0 +1,25 @@
+.Remarks {
+  display: grid;
+  gap: 0.75rem;
+  border: 1px solid #eadfce;
+  border-radius: 26px;
+  padding: 1rem;
+  background: #fffdf9;
+}
+
+.Remarks h2 {
+  margin: 0;
+}
+
+.RemarkText {
+  min-height: 100px;
+  margin: 0;
+  color: #4d4238;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.RemarkTextarea {
+  min-height: 160px;
+  resize: vertical;
+}

@@ -1,0 +1,59 @@
+.InventoryPage {
+  width: min(1280px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.InventoryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.InventoryHeader h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.InventorySummary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.InventorySummary div {
+  border: 1px solid #eadfce;
+  border-radius: 24px;
+  padding: 1rem;
+  background: rgba(255, 253, 249, 0.86);
+}
+
+.InventorySummary span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.InventorySummary small {
+  color: #786d62;
+}
+
+.InventoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 680px) {
+  .InventoryHeader {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+
+  .InventorySummary {
+    grid-template-columns: 1fr;
+  }
+}

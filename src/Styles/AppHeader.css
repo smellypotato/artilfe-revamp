@@ -1,0 +1,13 @@
+.AppHeader {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+}
+
+@media (max-width: 680px) {
+  .AppHeader {
+    top: 0.75rem;
+    left: 0.75rem;
+  }
+}

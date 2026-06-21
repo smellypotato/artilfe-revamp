@@ -1,0 +1,90 @@
+.StockRecord {
+  display: grid;
+  gap: 1rem;
+  border: 1px solid #eadfce;
+  border-radius: 26px;
+  padding: 1rem;
+  background: #fffdf9;
+}
+
+.StockRecordHeader h2,
+.StockRecordHeader p {
+  margin: 0;
+}
+
+.StockRecordHeader p {
+  margin-top: 0.35rem;
+  color: #786d62;
+}
+
+.RecordForms {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.RecordForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-radius: 22px;
+  padding: 1rem;
+  background: #f6efe5;
+}
+
+.RecordForm h3 {
+  margin: 0;
+}
+
+.RecordForm label {
+  display: grid;
+  gap: 0.35rem;
+  color: #786d62;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.RecordForm button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  background: #9e6036;
+  margin-top: auto;
+}
+
+.RecordTableWrap {
+  overflow-x: auto;
+}
+
+.RecordTable {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+}
+
+.RecordTable th,
+.RecordTable td {
+  border-bottom: 1px solid #efe4d6;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.RecordTable th {
+  color: #786d62;
+  font-size: 0.8rem;
+}
+
+.SmallBtn {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  color: #a33a2e;
+  background: #f5e3d7;
+}
+
+@media (max-width: 820px) {
+  .RecordForms {
+    grid-template-columns: 1fr;
+  }
+}
